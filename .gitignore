@@ -1,4 +1,3 @@
 .vagrant/*
 Vagrantfile
 package.box
-phpDocumentor.phar
