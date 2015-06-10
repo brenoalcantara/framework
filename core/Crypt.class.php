@@ -23,6 +23,7 @@ class Crypt {
 	 * @var string $prefix
 	*/
 	private $prefix;
+
 	/**
 	 * Custo: 10
 	 * 
@@ -30,6 +31,7 @@ class Crypt {
 	 * @var int $cost 
 	*/
 	private $cost;
+	
 	/**
 	 * Tamanho: 22
 	 * 
