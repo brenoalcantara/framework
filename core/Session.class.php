@@ -18,6 +18,7 @@ final class Session
 {
 	/**
 	 * Metodo construtor da classe. Inicializa a sessão
+	 * 
 	 * @access public
 	 * @return void 
 	 */
@@ -27,6 +28,7 @@ final class Session
 
 	/**
 	 * Impede a clonagem da classe
+	 * 
 	 * @access public
 	 * @return string
 	 */
@@ -36,6 +38,7 @@ final class Session
 
 	/**
 	 * Seta a variavel da sessao e o seu valor
+	 * 
 	 * @access public
 	 * @param mixed $var
 	 * @param mixed $valor
@@ -47,6 +50,7 @@ final class Session
 
 	/**
 	 * Retorna o valor da variavel da sessao
+	 * 
 	 * @access public
 	 * @param mixed $var
 	 * @return mixed
@@ -59,6 +63,7 @@ final class Session
 
 	/**
 	 * Destrói a sessão
+	 * 
 	 * @access public
 	 * @return void
 	 */
