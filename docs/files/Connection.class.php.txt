@@ -25,6 +25,7 @@ final class Connection
 
 	/**
 	 * Recebe a conexão
+	 * 
 	 * @access private
 	 * @var string $conn
 	 */ 
@@ -32,6 +33,7 @@ final class Connection
 
 	/**
 	 * Método construtor da classe
+	 * 
 	 * @access private
 	 * @return void 
 	 */
@@ -39,8 +41,9 @@ final class Connection
 
 	/**
 	 * Retorna a conexão
+	 * 
 	 * @access public
-	 * @return resource 
+	 * @return resource
 	 */
 	public static function getConnection() {
 		try {
