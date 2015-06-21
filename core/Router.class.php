@@ -1,7 +1,7 @@
-<?php 
+<?php
 /**
 * Core
-* 
+*
 * @author Breno Alcantara <contato.breno@gmail.com>
 * @copyright 2015 Breno Alcantara
 * @license MIT
@@ -12,36 +12,36 @@ namespace Core;
 
 /**
  * Router
- * Classe para roteamento de URLs  
- * 
+ * Classe para roteamento de URLs
+ *
  * @version 1.0.0
  */
 class Router
 {
 	/**
 	 * Recebe a url
-	 * 
+	 *
 	 * @var array $url
 	 */
-	private $url;
+	private $url = array();
 
 	/**
 	 * Recebe o controller
-	 * 
+	 *
 	 * @var string $controller
 	 */
 	private $controller;
 
 	/**
 	 * Recebe o método
-	 * 
+	 *
 	 * @var string $action
 	 */
 	private $action;
 
 	/**
-	 * Método construtor da classe 
-	 * 
+	 * Método construtor da classe
+	 *
 	 * @return void
 	 */
 	public function __construct(){
@@ -49,8 +49,8 @@ class Router
 	}
 
 	/**
-	 * Retorna um parâmetro específico 
-	 * 
+	 * Retorna um parâmetro específico
+	 *
 	 * @param string $param
 	 * @return mixed
 	 */
@@ -63,8 +63,8 @@ class Router
 	}
 
 	/**
-	 * Retorna o controller 
-	 * 
+	 * Retorna o controller
+	 *
 	 * @return string
 	 */
 	public function getController(){
@@ -73,8 +73,8 @@ class Router
 	}
 
 	/**
-	 * Retorna o método 
-	 * 
+	 * Retorna o método
+	 *
 	 * @return string
 	 */
 	public function getAction(){
