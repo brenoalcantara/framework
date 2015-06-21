@@ -2,18 +2,20 @@
 /**
  * Core
  * 
- * Classe final no padrao Singleton para conexao com o Mysql
- *
- * @access public
  * @author Breno Alcantara <contato.breno@gmail.com>
  * @copyright 2015 Breno Alcantara
  * @license MIT
  * @license http://opensource.org/licenses/MIT The MIT License (MIT)
- * @version 1.0.0
+ * @package Core
  */
-
 namespace Core;
 
+/**
+ * Connection
+ * Classe final no padrao Singleton para conexao com o Mysql 
+ * 
+ * @version 1.0.0
+ */
 final class Connection
 {
 	/**
