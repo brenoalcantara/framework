@@ -12,7 +12,7 @@ namespace Core;
 
 /**
  * Connection
- * Classe final no padrao Singleton para conexao com o Mysql 
+ * Classe final padrao Singleton para conexao com o Mysql 
  * 
  * @version 1.0.0
  */
