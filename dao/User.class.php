@@ -26,7 +26,7 @@ class UserDao {
 	private $conn;
 
 	/**
-	 * Método construtor: inicializa a conexão com o banco
+	 * Inicializa a conexão com o banco
 	 * 
 	 * @param int|null $id 
 	 * @return void
@@ -38,10 +38,10 @@ class UserDao {
 	/**
 	 * Insere os dados 
 	 * 
-	 * @param UserModel $user
+	 * @param User $user
 	 * @return int
 	 */
-	public function insert(UserModel $user) {
+	public function insert(User $user) {
 		try {
 			$this->conn->beginTransaction();
 
@@ -66,11 +66,11 @@ class UserDao {
 	/**
 	 * Atualiza os dados 
 	 * 
-	 * @param UserModel $user
+	 * @param User $user
 	 * @param int $id
 	 * @return void
 	 */
-	public function update(UserModel $user, $id) {
+	public function update(User $user, $id) {
 		try {
 			$this->conn->beginTransaction();
 			
@@ -93,18 +93,16 @@ class UserDao {
 	/**
 	 * Deleta um registro
 	 * 
-	 * @param userModel $user
+	 * @param User $user
 	 * @param int $id
 	 * @return void
 	 */
-	public function delete(UserModel $user, $id) {
+	public function delete(User $user, $id) {
 		try {
 			$this->con->beginTransaction();
 			
 			$sql = $this->con->prepare("DELETE FROM user WHERE id = ?");
-			
 			$sql->bindValue(1, $id, PDO::PARAM_INT);
-			
 			$sql->execute();
 			
 			$this->con->commit();
