@@ -16,7 +16,7 @@ namespace Dao;
  * 
  * @version 1.0.0
  */
-class UserDao {
+class User {
 
 	/**
 	 * Recebe a conexão
@@ -53,7 +53,7 @@ class UserDao {
 			$sql->bindValue(3, $user->getStatus(), PDO::PARAM_BOOL);
 			$sql->execute();
 			
-			$param = $this->con->lastInsertId();
+			$param = $this->conn->lastInsertId();
 			$this->conn->commit();
 			
 			return $param;
