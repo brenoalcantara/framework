@@ -2,18 +2,24 @@
 
 /**
  * 
- * Core
- * 
- * Classe para criação de hash
+ * Core\Crypt
  * 
  * @access public
  * @author Breno Alcantara <contato.breno@gmail.com>
  * @copyright 2015 Breno Alcantara
  * @license MIT
  * @license http://opensource.org/licenses/MIT The MIT License (MIT)
- * @version 1.0.0
-*/
+ * @package Core
+ */
 
+namespace Core\Crypt;
+
+/**
+ * Crypt
+ * Classe para geração de hashs de senhas e tokens 
+ * 
+ * @version 1.0.0
+ */
 class Crypt {
 	
 	/**
