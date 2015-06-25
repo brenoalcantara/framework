@@ -11,7 +11,7 @@
 namespace Dao;
 
 /**
- * UserDao
+ * User
  * Classe padrao DAO para persistência dos dados
  * 
  * @version 1.0.0
