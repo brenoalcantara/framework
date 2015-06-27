@@ -38,7 +38,7 @@ class User {
 	/**
 	 * Insere os dados 
 	 * 
-	 * @param User $user
+	 * @param object User $user
 	 * @return int
 	 */
 	public function insert(User $user) {
@@ -66,7 +66,7 @@ class User {
 	/**
 	 * Atualiza os dados 
 	 * 
-	 * @param User $user
+	 * @param object User $user
 	 * @param int $id
 	 * @return void
 	 */
@@ -93,22 +93,26 @@ class User {
 	/**
 	 * Deleta um registro
 	 * 
-	 * @param User $user
+	 * @param object User $user
 	 * @param int $id
 	 * @return void
 	 */
 	public function delete(User $user, $id) {
 		try {
-			$this->con->beginTransaction();
+			$this->conn->beginTransaction();
 			
-			$sql = $this->con->prepare("DELETE FROM user WHERE id = ?");
+			$sql = $this->conn->prepare("DELETE FROM user WHERE id = ?");
 			$sql->bindValue(1, $id, PDO::PARAM_INT);
 			$sql->execute();
 			
-			$this->con->commit();
+			$this->conn->commit();
 		} catch(PDOException $erro) {
-			$this->con->rollback();
+			$this->conn->rollback();
 			echo 'Erro: ' . $erro->getMessage();
 		}
+	}
+
+	public function __destruct() {
+		$this->conn = NULL;
 	}
 }
