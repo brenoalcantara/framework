@@ -23,7 +23,6 @@ class Upload
 	/**
 	 * Arquivo do form
 	 *
-	 * @access private
 	 * @var resource $file
 	 */
 	private $file;
@@ -31,7 +30,6 @@ class Upload
 	/**
 	 * Destino do arquivo
 	 *
-	 * @access private
 	 * @var string $path
 	 */
 	private $path;
@@ -39,7 +37,6 @@ class Upload
 	/**
 	 * Nome do arquivo
 	 *
-	 * @access private
 	 * @var string $name
 	 */
 	private $name;
@@ -47,7 +44,6 @@ class Upload
 	/**
 	 * Tipo do arquivo
 	 *
-	 * @access private
 	 * @var string $type
 	 */
 	private $type;
@@ -55,7 +51,6 @@ class Upload
 	/**
 	 * Nome temporario do arquivo
 	 *
-	 * @access private
 	 * @var string $tmpName
 	 */
 	private $tmpName;
@@ -63,7 +58,6 @@ class Upload
 	/**
 	 * Mensagem de sucesso ou erro
 	 *
-	 * @access private
 	 * @var string $message
 	 */
 	private $message;
@@ -71,7 +65,6 @@ class Upload
 	/**
 	 * Tamanho do arquivo
 	 *
-	 * @access private
 	 * @var int $size
 	 */
 	private $size;
@@ -79,7 +72,6 @@ class Upload
 	/**
 	 * Largura da imagem
 	 *
-	 * @access private
 	 * @var int $width
 	 */
 	private $width;
@@ -87,7 +79,6 @@ class Upload
 	/**
 	 * Altura da imagem
 	 *
-	 * @access private
 	 * @var int $height
 	 */
 	private $height;
@@ -95,7 +86,6 @@ class Upload
 	/**
 	 * Array contendo as extensoes permitidas
 	 *
-	 * @access private
 	 * @var array $allowedExtensions
 	 */
 	private $allowedExtensions;
@@ -103,7 +93,6 @@ class Upload
 	/**
 	 * Tamanho maximo permitido
 	 *
-	 * @access private
 	 * @var int $maxSize
 	 */
 	private $maxSize;
@@ -111,7 +100,6 @@ class Upload
 	/**
 	 * Metodo construtor da classe
 	 *
-	 * @access public
 	 * @param resource $file
 	 * @return void
 	 */
@@ -136,7 +124,6 @@ class Upload
 	/**
 	 * Seta o destino do arquivo
 	 *
-	 * @access public
 	 * @param string $path
 	 * @return void
 	 */
@@ -154,7 +141,6 @@ class Upload
 	/**
 	 * Seta as extensoes permitidas
 	 *
-	 * @access public
 	 * @param array $extesions
 	 * @return void
 	 */
@@ -169,7 +155,6 @@ class Upload
 	/**
 	 * Seta o tamanho maximo permitido
 	 *
-	 * @access public
 	 * @param int $size
 	 * @return void
 	 */
@@ -180,7 +165,6 @@ class Upload
 	/**
 	 * Seta a mensagem de sucesso ou erro
 	 *
-	 * @access public
 	 * @param string $message
 	 * @return void
 	 */
@@ -191,7 +175,6 @@ class Upload
 	/**
 	 * Retorna o nome do arquivo
 	 *
-	 * @access public
 	 * @return string $name
 	 */
 	public function getName() {
@@ -201,7 +184,6 @@ class Upload
 	/**
 	 * Retorna a extensao do arquivo
 	 *
-	 * @access public
 	 * @return string $extension
 	 */
 	public function getExtension() {
@@ -211,7 +193,6 @@ class Upload
 	/**
 	 * Retorna a largura da imagem
 	 *
-	 * @access public
 	 * @return int $width
 	 */
 	public function getWidth() {
@@ -221,7 +202,6 @@ class Upload
 	/**
 	 * Retorna a altura da imagem
 	 *
-	 * @access public
 	 * @return int $height
 	 */
 	public function getHeight() {
@@ -231,7 +211,6 @@ class Upload
 	/**
 	 * Retorna a mensagem de erro ou sucesso
 	 *
-	 * @access public
 	 * @return string $message
 	 */
 	public function getMessage() {
@@ -241,7 +220,6 @@ class Upload
 	/**
 	 * Executa o upload do arquivo
 	 *
-	 * @access public
 	 * @return void
 	 */
 	public function upload() {
@@ -267,7 +245,6 @@ class Upload
 	/**
 	 * Retira os caracteres especiais e acentos do nome do arquivo
 	 *
-	 * @access private
 	 * @param string $string
 	 * @return string $string
 	 */
