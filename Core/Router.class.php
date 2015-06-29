@@ -8,7 +8,7 @@
 * @license http://opensource.org/licenses/MIT The MIT License (MIT)
 * @package Core
 */
-namespace Core;
+namespace Core\Router;
 
 /**
  * Router
