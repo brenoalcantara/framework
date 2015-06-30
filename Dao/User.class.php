@@ -1,7 +1,7 @@
 <?php
 /**
  * DAO
- * 
+ *
  * @author Breno Alcantara <contato.breno@gmail.com>
  * @copyright 2015 Breno Alcantara
  * @license MIT
@@ -13,31 +13,31 @@ namespace Dao;
 /**
  * User
  * Classe padrao DAO para persistência dos dados
- * 
+ *
  * @version 1.0.0
  */
 class User {
 
 	/**
 	 * Recebe a conexão
-	 * 
+	 *
 	 * @var string $conn
 	 */
 	private $conn;
 
 	/**
 	 * Inicializa a conexão com o banco
-	 * 
-	 * @param int|null $id 
+	 *
+	 * @param int|null $id
 	 * @return void
-	 */ 
+	 */
 	public function __construct($id = null) {
 		$this->conn = Connection::getConnection();
 	}
 
 	/**
-	 * Insere os dados 
-	 * 
+	 * Insere os dados
+	 *
 	 * @param object User $user
 	 * @return int
 	 */
@@ -45,18 +45,18 @@ class User {
 		try {
 			$this->conn->beginTransaction();
 
-			$sql = $this->conn->prepare("INSERT INTO user (email, password, status) 
+			$sql = $this->conn->prepare("INSERT INTO user (email, password, status)
 			VALUES (?, ?, ?)");
-			
+
 			$sql->bindValue(1, $user->getEmail(), PDO::PARAM_STR);
 			$sql->bindValue(2, $user->getPassword(), PDO::PARAM_STR);
 			$sql->bindValue(3, $user->getStatus(), PDO::PARAM_BOOL);
 			$sql->execute();
-			
-			$param = $this->conn->lastInsertId();
+
+			$lastId = $this->conn->lastInsertId();
 			$this->conn->commit();
-			
-			return $param;
+
+			return $lastId;
 		} catch(PDOException $erro) {
 			$this->conn->rollback();
 			echo 'Erro: ' . $erro->getMessage();
@@ -64,8 +64,8 @@ class User {
 	}
 
 	/**
-	 * Atualiza os dados 
-	 * 
+	 * Atualiza os dados
+	 *
 	 * @param object User $user
 	 * @param int $id
 	 * @return void
@@ -73,26 +73,26 @@ class User {
 	public function update(User $user, $id) {
 		try {
 			$this->conn->beginTransaction();
-			
-			$sql = $this->conn->prepare("UPDATE user SET email = ?, password = ?, status = ? 
-			WHERE id = ?");		
-			
+
+			$sql = $this->conn->prepare("UPDATE user SET email = ?, password = ?, status = ?
+			WHERE id = ?");
+
 			$sql->bindValue(1, $user->getEmail(), PDO::PARAM_STR);
 			$sql->bindValue(2, $user->getPassword(), PDO::PARAM_STR);
 			$sql->bindValue(3, $user->getStatus(), PDO::PARAM_INT);
 			$sql->bindValue(4, $id, PDO::PARAM_INT);
 			$sql->execute();
-			
+
 			$this->conn->commit();
 		} catch(PDOException $erro) {
 			$this->conn->rollback();
 			echo 'Erro: ' . $erro->getMessage();
 		}
 	}
-	
+
 	/**
 	 * Deleta um registro
-	 * 
+	 *
 	 * @param object User $user
 	 * @param int $id
 	 * @return void
@@ -100,11 +100,11 @@ class User {
 	public function delete(User $user, $id) {
 		try {
 			$this->conn->beginTransaction();
-			
+
 			$sql = $this->conn->prepare("DELETE FROM user WHERE id = ?");
 			$sql->bindValue(1, $id, PDO::PARAM_INT);
 			$sql->execute();
-			
+
 			$this->conn->commit();
 		} catch(PDOException $erro) {
 			$this->conn->rollback();
