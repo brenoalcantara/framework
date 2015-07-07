@@ -1,8 +1,8 @@
 <?php 
 
-interface Expression {
+abstract class Expression {
 	const AND_OPERATOR = 'AND ';
     const OR_OPERATOR = 'OR ';
 
-	public function mount();
+	abstract public function mount();
 }
