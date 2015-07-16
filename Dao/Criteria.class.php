@@ -1,9 +1,9 @@
 <?php
 
 /**
-* 
-*/
-class Criteria implements Expression
+ * 
+ */
+class Criteria extends Expression
 {
 	private $expressions;
 	private $operators;
