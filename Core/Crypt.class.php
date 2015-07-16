@@ -25,7 +25,6 @@ class Crypt {
 	/**
 	 * Prefixo: 2a
 	 * 
-	 * @access private
 	 * @var string $prefix
 	*/
 	private $prefix;
@@ -33,7 +32,6 @@ class Crypt {
 	/**
 	 * Custo: 10
 	 * 
-	 * @access private
 	 * @var int $cost 
 	*/
 	private $cost;
@@ -41,7 +39,6 @@ class Crypt {
 	/**
 	 * Tamanho: 22
 	 * 
-	 * @access private
 	 * @var string $length 
 	*/
 	private $length;
@@ -63,7 +60,6 @@ class Crypt {
 	/**
 	 * Encripta a string
 	 * 
-	 * @access public
 	 * @param string $string
 	 * @return string $string
 	*/ 
@@ -76,7 +72,6 @@ class Crypt {
 	/**
 	 * Checa a string 
 	 * 
-	 * @access public
 	 * @param string $string
 	 * @param string $hash
 	 * @return boolean
@@ -88,7 +83,6 @@ class Crypt {
 	/**
 	 * Gera o salt
 	 * 
-	 * @access public
 	 * @return string $salt
 	*/
 	public function generateSalt() {
@@ -105,7 +99,6 @@ class Crypt {
 	/**
 	 * Gera o hash
 	 * 
-	 * @access public
 	 * @param string $salt
 	 * @return string $hash
 	*/
@@ -116,7 +109,6 @@ class Crypt {
 	/**
 	 * Gera o token
 	 * 
-	 * @access public
 	 * @param string $string
 	 * @return string $token
 	*/
@@ -128,7 +120,6 @@ class Crypt {
 	/**
 	 * Checa o token
 	 * 
-	 * @access public
 	 * @param string $string
 	 * @param string $token
 	 * @return string $salt

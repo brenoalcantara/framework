@@ -21,7 +21,6 @@ final class Session
 	/**
 	 * Metodo construtor da classe. Inicializa a sessão
 	 * 
-	 * @access public
 	 * @return void 
 	 */
 	public function __construct() {
@@ -31,7 +30,6 @@ final class Session
 	/**
 	 * Impede a clonagem da classe
 	 * 
-	 * @access public
 	 * @return string
 	 */
 	public function __clone() {
@@ -41,7 +39,6 @@ final class Session
 	/**
 	 * Seta a variavel da sessao e o seu valor
 	 * 
-	 * @access public
 	 * @param mixed $var
 	 * @param mixed $valor
 	 * @return void
@@ -53,7 +50,6 @@ final class Session
 	/**
 	 * Retorna o valor da variavel da sessao
 	 * 
-	 * @access public
 	 * @param mixed $var
 	 * @return mixed
 	 */
@@ -66,7 +62,6 @@ final class Session
 	/**
 	 * Destrói a sessão
 	 * 
-	 * @access public
 	 * @return void
 	 */
 	public function sessionDestroy() {
