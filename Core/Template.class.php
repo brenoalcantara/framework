@@ -1,34 +1,62 @@
 <?php
 /**
+ * Core
+ *
+ * @author Breno Alcantara <contato.breno@gmail.com>
+ * @copyright 2015 Breno Alcantara
+ * @license MIT
+ * @license http://opensource.org/licenses/MIT The MIT License (MIT)
+ * @package Core
+*/
+
+namespace Core\Template;
+
+/**
+ * Template
  * Classe para renderizacao do template
+ *
+ * @version 1.0.0
  */
 class Template {
 	/**
-	 * Atributo que recebe o caminho do arquivo do template
+	 * Recebe o caminho do arquivo do template
+	 *
+	 * @var string $file
 	 */
 	private $file;
 
 	/**
-	 * Atributo que recebe um array com os valores a serem substituidos no arquivo
+	 * Recebe um array com os valores a serem substituidos no arquivo
+	 *
+	 * @var array $values
 	 */
 	private $values = array();
 
 	/**
-	 * Metodo publico construtor que recebe o caminho do arquivo
+	 * Metodo construtor
+	 *
+	 * @param string $file
+	 * @return void
 	 */
 	public function __construct($file) {
 		$this->file = $file;
 	}
 
 	/**
-	 * Metodo publico para setar os valores que serão substituidos no template
+	 * Seta os valores que serão substituidos no template
+	 *
+	 * @param string $key
+	 * @param string $value
+	 * @return void
 	 */
 	public function setTag($key, $value) {
 		$this->values[$key] = $value;
 	}
 
 	/**
-	 * Metodo publico para percorrer as marcas do template e substitui-las pelos valores
+	 * Percorre as marcas do template e as substitui pelos valores
+	 *
+	 * @return string $output
 	 */
 	public function output() {
 		try {
@@ -46,7 +74,11 @@ class Template {
 	}
 
 	/**
-	 * Metodo publico estatico para mesclar as partes do template
+	 * Mescla as partes do template
+	 *
+	 * @param string $templates
+	 * @param string $separator
+	 * @return string $output
 	 */
 	public static function outputTemplates($templates, $separator = "\n") {
 		try {
@@ -62,6 +94,5 @@ class Template {
 			echo 'Erro: ' . $e->getMessage();
 		}
 	}
-
 }
 ?>
