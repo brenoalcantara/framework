@@ -7,7 +7,7 @@ class Criteria extends Expression
 {
 	private $expressions;
 	private $operators;
-	private $properties
+	private $properties;
 	
 	public function __construct() {
 		$this->expressions = array();

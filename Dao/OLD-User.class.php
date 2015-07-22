@@ -16,7 +16,7 @@ namespace Dao;
  *
  * @version 1.0.0
  */
-class User extends \Dao {
+class User {
 
 	/**
 	 * Recebe a conexão
@@ -45,17 +45,18 @@ class User extends \Dao {
 		try {
 			$this->conn->beginTransaction();
 
-			$this->sql = $this->conn->prepare("INSERT INTO user (".implode(', ', array_keys($this->columnValues)).")
-			VALUES (".implode(', ', array_values($this->columnValues)).")");
+			$sql = $this->conn->prepare("INSERT INTO user (email, password, status)
+			VALUES (?, ?, ?)");
 
-			$this->sql->execute();
+			$sql->bindValue(1, $user->getEmail(), PDO::PARAM_STR);
+			$sql->bindValue(2, $user->getPassword(), PDO::PARAM_STR);
+			$sql->bindValue(3, $user->getStatus(), PDO::PARAM_BOOL);
+			$sql->execute();
 
 			$lastId = $this->conn->lastInsertId();
-
 			$this->conn->commit();
 
 			return $lastId;
-
 		} catch(PDOException $erro) {
 			$this->conn->rollback();
 			echo 'Erro: ' . $erro->getMessage();
@@ -108,32 +109,6 @@ class User extends \Dao {
 		} catch(PDOException $erro) {
 			$this->conn->rollback();
 			echo 'Erro: ' . $erro->getMessage();
-		}
-	}
-
-	public function query($criteria) {
-		$this->sql = "SELECT implode(',', $this->columns) FROM user ";
-
-		if ($criteria) {
-			$expression = $criteria->mount();
-			if ($expression) {
-				$this->sql .= " WHERE $expression ";
-			}
-
-			$order = $criteria->getProperty('order');
-            $limit = $criteria->getProperty('limit');
-            $offset= $criteria->getProperty('offset');
-
-            if ($order) {
-                $this->sql .= ' ORDER BY ' . $order;
-            }
-            if ($limit) {
-                $this->sql .= ' LIMIT ' . $limit;
-            }
-            }
-            if ($offset) {
-                $this->sql .= ' OFFSET ' . $offset;
-            }
 		}
 	}
 
