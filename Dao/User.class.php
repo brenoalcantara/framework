@@ -135,6 +135,8 @@ class User extends \Dao {
                 $this->sql .= ' OFFSET ' . $offset;
             }
 		}
+
+		$this->sql->query();
 	}
 
 	public function __destruct() {
