@@ -4,7 +4,6 @@ abstract class Dao
 {
 	protected $sql;
 	protected $criteria;
-	protected $table;
 	protected $columns = array();
 
 	/**
@@ -15,26 +14,24 @@ abstract class Dao
 	protected $columnValues = array();
 
 	protected function setRowData($column, $value) {
+		
 		if(is_scalar($value)) {
+			
 			if (is_string($value) and !empty($value)) {
+			
 				$value = addslashes($value);
 				$this->columnValues[$column] = "'$value'";
+			
 			} elseif (is_bool($value)) {
 				$this->columnValues[$column] = $value ? 'TRUE' : 'FALSE';
+			
 			} elseif ($value !== '') {
 				$this->columnValues[$column] = $value;
+			
 			} else {
 				$this->columnValues[$column] = "NULL";
 			}
 		}
-	}
-
-	protected function setTable($table) {
-		$this->table = $table;
-	}
-
-	protected function getTable() {
-		return $this->table;
 	}
 
 	protected function setCriteria(Criteria $criteria) {
