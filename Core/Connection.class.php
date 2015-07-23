@@ -1,6 +1,6 @@
 <?php
 /**
- * Core
+ * Framework\Core
  * 
  * @author Breno Alcantara <contato.breno@gmail.com>
  * @copyright 2015 Breno Alcantara
