@@ -71,6 +71,11 @@ class User extends \Dao {
 	 */
 	public function update(User $user, $id) {
 		try {
+
+			foreach ($user as $key => $value) {
+				
+			}
+
 			$this->conn->beginTransaction();
 
 			$sql = $this->conn->prepare("UPDATE user SET email = ?, password = ?, status = ?
