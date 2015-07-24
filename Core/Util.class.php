@@ -1,16 +1,14 @@
 <?php
-
 /**
- * Core
+ * Framework\Core
  *
  * @author Breno Alcantara <contato.breno@gmail.com>
  * @copyright 2015 Breno Alcantara
  * @license MIT
  * @license http://opensource.org/licenses/MIT The MIT License (MIT)
- * @package Core
+ * @package Framework\Core
 */
-
-namespace Core\Util;
+namespace Framework\Core;
 
 /**
  * Util
