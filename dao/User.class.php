@@ -95,7 +95,6 @@ class User {
     /**
      * Deleta um registro
      *
-     * @param object User $user
      * @param int $id
      * @return void
      */
