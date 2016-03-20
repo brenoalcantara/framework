@@ -1,5 +1,5 @@
-# framework
+# Sol
 
-Libs PHP
+Bibliotecas PHP
 
 Exemplo de uso do phpDocumentor: php phpDocumentor.phar -d . -t docs/
