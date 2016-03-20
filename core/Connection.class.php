@@ -1,20 +1,24 @@
 <?php
 /**
- * Framework\Core
+ * Sol\Core
  * 
  * @author Breno Alcantara <contato.breno@gmail.com>
  * @copyright 2015 Breno Alcantara
  * @license MIT
  * @license http://opensource.org/licenses/MIT The MIT License (MIT)
- * @package Framework\Core
+ * @package Sol\Core
  */
-namespace Framework\Core;
+namespace Sol\Core;
+
+use PDO;
+USE PDOException;
 
 /**
  * Connection
  * Classe final padrao Singleton para conexao com o Mysql 
  * 
  * @version 1.0.0
+ * @todo Add suporte para outros bancos: PostgreSql, Sqlite...
  */
 final class Connection
 {
