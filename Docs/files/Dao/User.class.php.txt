@@ -1,20 +1,20 @@
 <?php
 
 /**
- * Framework\DAO
+ * Sol\Dao
  *
  * @author Breno Alcantara <contato.breno@gmail.com>
  * @copyright 2015 Breno Alcantara
  * @license MIT
  * @license http://opensource.org/licenses/MIT The MIT License (MIT)
- * @package Framework\Dao
+ * @package Sol\Dao
  */
 
-namespace Framework\Dao;
+namespace Sol\Dao;
 
 /**
  * User
- * Classe padrao DAO para persistência dos dados
+ * Classe DAO para persistência de dados
  *
  * @version 1.0.0
  */
