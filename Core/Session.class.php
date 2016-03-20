@@ -6,7 +6,7 @@
  * @copyright 2015 Breno Alcantara
  * @license MIT
  * @license http://opensource.org/licenses/MIT The MIT License (MIT)
- * @package Sol\Core
+ * @package Core
  */
 namespace Sol\Core;
 
