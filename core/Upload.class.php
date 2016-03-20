@@ -1,106 +1,106 @@
-<?php  
-
+<?php
 /**
- * Core
- * 
- * Classe para upload de arquivos.
- * 
- * @access public
+ * Framework\Core
+ *
  * @author Breno Alcantara <contato.breno@gmail.com>
  * @copyright 2015 Breno Alcantara
  * @license MIT
  * @license http://opensource.org/licenses/MIT The MIT License (MIT)
- * @package Core
+ * @package Framework\Core
+ */
+namespace Framework\Core;
+
+/**
+ * Upload
+ * Classe para upload de arquivos.
+ *
  * @version 1.0.0
- */ 
-
-namespace Core;
-
+ */
 class Upload
 {
 	/**
 	 * Arquivo do form
-	 * @access private
-	 * @var resource $file 
+	 *
+	 * @var resource $file
 	 */
 	private $file;
 
 	/**
 	 * Destino do arquivo
-	 * @access private
-	 * @var string $path 
+	 *
+	 * @var string $path
 	 */
 	private $path;
 
 	/**
 	 * Nome do arquivo
-	 * @access private
-	 * @var string $name 
+	 *
+	 * @var string $name
 	 */
 	private $name;
 
 	/**
 	 * Tipo do arquivo
-	 * @access private
-	 * @var string $type 
+	 *
+	 * @var string $type
 	 */
 	private $type;
 
 	/**
 	 * Nome temporario do arquivo
-	 * @access private
-	 * @var string $tmpName 
+	 *
+	 * @var string $tmpName
 	 */
 	private $tmpName;
 
 	/**
 	 * Mensagem de sucesso ou erro
-	 * @access private
-	 * @var string $message 
+	 *
+	 * @var string $message
 	 */
 	private $message;
 
 	/**
 	 * Tamanho do arquivo
-	 * @access private
-	 * @var int $size 
+	 *
+	 * @var int $size
 	 */
 	private $size;
 
 	/**
 	 * Largura da imagem
-	 * @access private
-	 * @var int $width 
+	 *
+	 * @var int $width
 	 */
 	private $width;
 
 	/**
 	 * Altura da imagem
-	 * @access private
-	 * @var int $height 
+	 *
+	 * @var int $height
 	 */
 	private $height;
 
 	/**
-	 * Array com as extensoes permitidas
-	 * @access private
-	 * @var array $allowedExtensions 
+	 * Array contendo as extensoes permitidas
+	 *
+	 * @var array $allowedExtensions
 	 */
 	private $allowedExtensions;
 
 	/**
 	 * Tamanho maximo permitido
-	 * @access private
-	 * @var int $maxSize 
+	 *
+	 * @var int $maxSize
 	 */
 	private $maxSize;
 
 	/**
 	 * Metodo construtor da classe
-	 * @access public
+	 *
 	 * @param resource $file
 	 * @return void
-	 */ 
+	 */
 	public function __construct($file) {
 		$this->file = $file;
 		foreach ($this->file as $value) {
@@ -111,7 +111,7 @@ class Upload
 
 
 			$imageSize = getimagesize($this->tmpName);
-			
+
 			if ($imageSize != false) {
 				$this->width = $imageSize[0];
 				$this->height = $imageSize[1];
@@ -121,13 +121,13 @@ class Upload
 
 	/**
 	 * Seta o destino do arquivo
-	 * @access public
+	 *
 	 * @param string $path
 	 * @return void
 	 */
 	public function setPath($path) {
 		/**
-		 * Checa se o diretorio tem permissao de escrita 
+		 * Checa se o diretorio tem permissao de escrita
 		 */
 		if (!is_dir($path)) {
 			mkdir($path, 0777, true);
@@ -138,7 +138,7 @@ class Upload
 
 	/**
 	 * Seta as extensoes permitidas
-	 * @access public
+	 *
 	 * @param array $extesions
 	 * @return void
 	 */
@@ -152,7 +152,7 @@ class Upload
 
 	/**
 	 * Seta o tamanho maximo permitido
-	 * @access public
+	 *
 	 * @param int $size
 	 * @return void
 	 */
@@ -162,7 +162,7 @@ class Upload
 
 	/**
 	 * Seta a mensagem de sucesso ou erro
-	 * @access public
+	 *
 	 * @param string $message
 	 * @return void
 	 */
@@ -172,7 +172,7 @@ class Upload
 
 	/**
 	 * Retorna o nome do arquivo
-	 * @access public
+	 *
 	 * @return string $name
 	 */
 	public function getName() {
@@ -181,7 +181,7 @@ class Upload
 
 	/**
 	 * Retorna a extensao do arquivo
-	 * @access public
+	 *
 	 * @return string $extension
 	 */
 	public function getExtension() {
@@ -189,8 +189,8 @@ class Upload
 	}
 
 	/**
-	 * Retorna a largura da imagem.
-	 * @access public
+	 * Retorna a largura da imagem
+	 *
 	 * @return int $width
 	 */
 	public function getWidth() {
@@ -199,7 +199,7 @@ class Upload
 
 	/**
 	 * Retorna a altura da imagem
-	 * @access public
+	 *
 	 * @return int $height
 	 */
 	public function getHeight() {
@@ -208,7 +208,7 @@ class Upload
 
 	/**
 	 * Retorna a mensagem de erro ou sucesso
-	 * @access public
+	 *
 	 * @return string $message
 	 */
 	public function getMessage() {
@@ -217,7 +217,7 @@ class Upload
 
 	/**
 	 * Executa o upload do arquivo
-	 * @access public
+	 *
 	 * @return void
 	 */
 	public function upload() {
@@ -242,7 +242,7 @@ class Upload
 
 	/**
 	 * Retira os caracteres especiais e acentos do nome do arquivo
-	 * @access private
+	 *
 	 * @param string $string
 	 * @return string $string
 	 */

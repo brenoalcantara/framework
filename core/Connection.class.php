@@ -1,20 +1,21 @@
 <?php
 /**
- * Core
+ * Framework\Core
  * 
- * Classe final no padrao Singleton para conexao com o Mysql
- *
- * @access public
  * @author Breno Alcantara <contato.breno@gmail.com>
  * @copyright 2015 Breno Alcantara
  * @license MIT
  * @license http://opensource.org/licenses/MIT The MIT License (MIT)
- * @package Core
+ * @package Framework\Core
+ */
+namespace Framework\Core;
+
+/**
+ * Connection
+ * Classe final padrao Singleton para conexao com o Mysql 
+ * 
  * @version 1.0.0
  */
-
-namespace Core;
-
 final class Connection
 {
 	/**
@@ -26,22 +27,22 @@ final class Connection
 
 	/**
 	 * Recebe a conexão
-	 * @access private
+	 * 
 	 * @var string $conn
 	 */ 
 	private static $conn;
 
 	/**
 	 * Método construtor da classe
-	 * @access private
+	 * 
 	 * @return void 
 	 */
 	private function __construct(){}
 
 	/**
 	 * Retorna a conexão
-	 * @access public
-	 * @return resource 
+	 * 
+	 * @return resource
 	 */
 	public static function getConnection() {
 		try {
