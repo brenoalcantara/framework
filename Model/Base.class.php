@@ -1,7 +1,7 @@
 <?php
 /**
  * Sol\Model
- * 
+ *
  * @author Breno Alcantara <contato.breno@gmail.com>
  * @copyright 2015 Breno Alcantara
  * @license MIT
@@ -18,19 +18,27 @@ namespace Sol\Model;
  */
 class Base
 {
-
-    public function __set($property, $value) {
-        if (property_exists($this, $property)) {
-            $this->$property = $value;
+    public function __construct($attributes = array()) {
+        foreach($attributes as $field => $value) {
+            $this->$field = $value;
         }
+    }    
 
-        return $this;
+    public function __set($name, $value) {
+        if (method_exists($this, $name)) {
+            $this->$name($value);
+        } else {
+            $this->$name = $value;
+        }
     }
 
-    public function __get($property) {
-        if (property_exists($this, $property)) {
-            return $this->$property;
+    public function __get($name) {
+        if (method_exists($this, $name)) {
+            return $this->$name();
+        } elseif (property_exists($this, $name)) {
+            return $this->$name;
         }
+        return null;
     }
 
 }
