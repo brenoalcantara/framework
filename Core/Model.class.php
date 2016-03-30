@@ -7,7 +7,7 @@
  * @license MIT
  * @license http://opensource.org/licenses/MIT The MIT License (MIT)
  */
-namespace Sol\Model;
+namespace Sol\Core;
 
 /**
  * Base
@@ -16,7 +16,7 @@ namespace Sol\Model;
  * @version 1.0.0
  * 
  */
-class Base
+class Model
 {
     public function __construct($attributes = array()) {
         foreach($attributes as $field => $value) {
