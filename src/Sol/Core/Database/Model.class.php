@@ -1,13 +1,13 @@
 <?php
 /**
- * Sol\Model
+ * Sol\Core\Database;
  *
  * @author Breno Alcantara <contato.breno@gmail.com>
- * @copyright 2015 Breno Alcantara
+ * @copyright 2017 Breno Alcantara
  * @license MIT
  * @license http://opensource.org/licenses/MIT The MIT License (MIT)
  */
-namespace Sol\Core;
+namespace Sol\Core\Database;
 
 /**
  * Base

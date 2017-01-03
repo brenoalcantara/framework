@@ -23,7 +23,7 @@ final class Session
 	 * @return void 
 	 */
 	public function __construct() {
-		session_start();
+            session_start();
 	}
 
 	/**
@@ -32,7 +32,7 @@ final class Session
 	 * @return string
 	 */
 	public function __clone() {
-		throw new Exception('Clone não permitido.');
+	    throw new Exception('Clone não permitido.');
 	}
 
 	/**
@@ -43,7 +43,7 @@ final class Session
 	 * @return void
 	 */
 	public function setSession($var, $value) {
-		$_SESSION[$var] = $value;
+	    $_SESSION[$var] = $value;
 	}
 
 	/**
@@ -53,9 +53,9 @@ final class Session
 	 * @return mixed
 	 */
 	public function getSession($var) {
-		if (isset($_SESSION[$var])) {
-			return $_SESSION[$var];
-		}
+            if (isset($_SESSION[$var])) {
+                return $_SESSION[$var];
+            }
 	}
 
 	/**
@@ -64,7 +64,7 @@ final class Session
 	 * @return void
 	 */
 	public function sessionDestroy() {
-		$_SESSION = array();
-        session_destroy();
+            $_SESSION = array();
+            session_destroy();
 	}
 }

@@ -9,8 +9,7 @@
  * @license http://opensource.org/licenses/MIT The MIT License (MIT)
  * @package Sol\Dao
  */
-
-namespace Sol\Dao;
+namespace App\Dao;
 
 /**
  * User

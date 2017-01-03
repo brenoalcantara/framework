@@ -3,3 +3,4 @@
 Vagrantfile
 package.box
 nbproject/*
+vendor/*

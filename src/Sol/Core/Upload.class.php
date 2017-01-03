@@ -125,14 +125,14 @@ class Upload
 	 * @return void
 	 */
 	public function setPath($path) {
-		/**
-		 * Se o destino não for um diretorio, cria e seta permissao de escrita
-		 */
-		if (!is_dir($path)) {
-			mkdir($path, 0777, true);
-		}
+            /**
+             * Se o destino não for um diretorio, cria e seta permissao de escrita
+             */
+            if (!is_dir($path)) {
+                mkdir($path, 0777, true);
+            }
 
-		$this->path = $path;
+            $this->path = $path;
 	}
 
 	/**
@@ -142,11 +142,11 @@ class Upload
 	 * @return void
 	 */
 	public function setAllowedExtensions($extensions) {
-		if (is_array($extensions)){
-			$this->allowedExtensions = $extensions;
-		} else {
-			$this->allowedExtensions = array ($extensions);
-		}
+            if (is_array($extensions)){
+                $this->allowedExtensions = $extensions;
+            } else {
+                $this->allowedExtensions = array ($extensions);
+            }
 	}
 
 	/**
@@ -156,7 +156,7 @@ class Upload
 	 * @return void
 	 */
 	public function setMaxSize($size) {
-		$this->maxSize = $size;
+	    $this->maxSize = $size;
 	}
 
 	/**
@@ -166,7 +166,7 @@ class Upload
 	 * @return void
 	 */
 	public function setMessage($message) {
-		$this->message = $message;
+	    $this->message = $message;
 	}
 
 	/**
@@ -175,7 +175,7 @@ class Upload
 	 * @return string $name
 	 */
 	public function getName() {
-		return $this->slugify($this->name);
+	    return $this->slugify($this->name);
 	}
 
 	/**
@@ -184,7 +184,7 @@ class Upload
 	 * @return string $extension
 	 */
 	public function getExtension() {
-		return end(explode('.', $this->name));
+	    return end(explode('.', $this->name));
 	}
 
 	/**
@@ -193,7 +193,7 @@ class Upload
 	 * @return int $width
 	 */
 	public function getWidth() {
-		return $this->width;
+	    return $this->width;
 	}
 
 	/**
@@ -202,7 +202,7 @@ class Upload
 	 * @return int $height
 	 */
 	public function getHeight() {
-		return $this->height;
+	    return $this->height;
 	}
 
 	/**
@@ -211,7 +211,7 @@ class Upload
 	 * @return string $message
 	 */
 	public function getMessage() {
-		return $this->message;
+	    return $this->message;
 	}
 
 	/**
@@ -220,23 +220,23 @@ class Upload
 	 * @return void
 	 */
 	public function upload() {
-		if(!is_dir($this->path)){
-			$this->setMessage('O destino não é um diretório!');
-		} elseif(!is_writable($this->path)) {
-			$this->setMessage('O destino não tem permissão de escrita!');
-		} elseif($this->getName() == ''){
-			$this->setMessage('Nenhum arquivo encontrado!');
-		} elseif(!in_array($this->getExtension(), $this->allowedExtensions)) {
-			$this->setMessage('Arquivo no formato inválido!');
-		} elseif($this->size > $this->maxSize) {
-			$this->setMessage('Tamanho máximo excedido. Limite: '.$this->maxSize.' bytes!');
-		} else {
-			if (!move_uploaded_file($this->tmpName, $this->path.$this->getName())){
-				$this->setMessage('Falha no upload do arquivo!');
-			} else {
-				$this->setMessage('Sucesso no upload do arquivo!');
-			}
-		}
+            if(!is_dir($this->path)){
+                    $this->setMessage('O destino não é um diretório!');
+            } elseif(!is_writable($this->path)) {
+                    $this->setMessage('O destino não tem permissão de escrita!');
+            } elseif($this->getName() == ''){
+                    $this->setMessage('Nenhum arquivo encontrado!');
+            } elseif(!in_array($this->getExtension(), $this->allowedExtensions)) {
+                    $this->setMessage('Arquivo no formato inválido!');
+            } elseif($this->size > $this->maxSize) {
+                    $this->setMessage('Tamanho máximo excedido. Limite: '.$this->maxSize.' bytes!');
+            } else {
+                if (!move_uploaded_file($this->tmpName, $this->path.$this->getName())){
+                    $this->setMessage('Falha no upload do arquivo!');
+                } else {
+                    $this->setMessage('Sucesso no upload do arquivo!');
+                }
+            }
 	}
 
 	/**

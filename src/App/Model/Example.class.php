@@ -7,9 +7,9 @@
  * @license MIT
  * @license http://opensource.org/licenses/MIT The MIT License (MIT) 
  */
-namespace Sol\Model;
+namespace App\Model;
 
-use Sol\Core\Model;
+use Sol\Core\Database\Model;
 
 /**
  * Example

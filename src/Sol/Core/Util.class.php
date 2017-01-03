@@ -24,10 +24,10 @@ class Util
 	 * @return boolean
 	 */
 	public static function isValidEmail($email) {
-		if (!preg_match("/^[a-z0-9_\.\-]+@[a-z0-9_\.\-]*[a-z0-9_\-]+\.[a-z]{2,4}$/", $email)) {
-			return false;
-		}
-		return true;
+            if (!preg_match("/^[a-z0-9_\.\-]+@[a-z0-9_\.\-]*[a-z0-9_\-]+\.[a-z]{2,4}$/", $email)) {
+                return false;
+            }
+            return true;
 	}
 
 	/**
@@ -37,9 +37,9 @@ class Util
 	 * @return boolean
 	 */
 	public static function isValidUrl($url) {
-		if (!preg_match("|^http(s)?://[a-z0-9-]+(\.[a-z0-9-]+)*(:[0-9]+)?(/.*)?$|i", $url)) {
-			return false;
-		}
-		return true;
+            if (!preg_match("|^http(s)?://[a-z0-9-]+(\.[a-z0-9-]+)*(:[0-9]+)?(/.*)?$|i", $url)) {
+                return false;
+            }
+            return true;
 	}
 }
