@@ -9,5 +9,9 @@ function autoload ($class) {
 spl_autoload_register('autoload');
 
 
-$teste = new \App\Model\Example();
+$teste = new \App\Model\Example(array(
+    'name'=>'Teste',
+    'password'=>'123456'
+    ));
+
 var_dump($teste->__get('password'));

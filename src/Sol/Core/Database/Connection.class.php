@@ -16,7 +16,7 @@ use PDOException;
  * Connection
  * Classe final padrao Singleton para conexao com o Mysql 
  * 
- * @version 1.0.0
+ * @version 1.0.1
  * @todo Add suporte para outros bancos: PostgreSql, Sqlite...
  */
 final class Connection
@@ -41,6 +41,20 @@ final class Connection
      * @return void 
      */
     private function __construct(){}
+    
+    /**
+     * Método clone da classe
+     * 
+     * @return void 
+     */
+    private function __clone() {}
+    
+    /**
+     * Método wakeup da classe
+     * 
+     * @return void 
+     */
+    private function __wakeup() {}
 
     /**
      * Retorna a conexão
