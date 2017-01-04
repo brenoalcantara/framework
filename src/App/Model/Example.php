@@ -1,11 +1,10 @@
 <?php
 /**
- * Sol\Model
- *
  * @author Breno Alcantara <contato.breno@gmail.com>
  * @copyright 2016 Breno Alcantara
  * @license MIT
  * @license http://opensource.org/licenses/MIT The MIT License (MIT) 
+ * @package App\Model
  */
 namespace App\Model;
 

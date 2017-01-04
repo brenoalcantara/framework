@@ -1,13 +1,10 @@
 <?php
-
 /**
- * Sol\Dao
- *
  * @author Breno Alcantara <contato.breno@gmail.com>
  * @copyright 2015 Breno Alcantara
  * @license MIT
  * @license http://opensource.org/licenses/MIT The MIT License (MIT)
- * @package Sol\Dao
+ * @package App\Dao
  */
 namespace App\Dao;
 
