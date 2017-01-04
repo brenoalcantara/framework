@@ -16,7 +16,7 @@ use PDOException;
  * Connection
  * Classe final padrao Singleton para conexao com o Mysql 
  * 
- * @version 1.0.1
+ * @version 1.1.0
  * @todo Add suporte para outros bancos: PostgreSql, Sqlite...
  */
 final class Connection

@@ -7,13 +7,13 @@
  * @license MIT
  * @license http://opensource.org/licenses/MIT The MIT License (MIT)
  */
-namespace Sol\Core\Database;
+namespace Sol\Core\Model;
 
 /**
  * Base
  * Classe base para implementação das classes de domínio
  * 
- * @version 1.0.0
+ * @version 1.0.1
  * 
  */
 class DomainObjects
