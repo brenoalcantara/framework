@@ -1,0 +1,2146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Sol\Core\Validator | Sol API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Sol_Core_Validator" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Sol API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Sol.html">Sol</a></li>
+                                        <li><a href="../../Sol/Core.html">Core</a></li>
+    
+                <li>Validator</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Validator
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Validator</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Base
+Classe para validação de dados</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>()
+        
+                                            <p>Método construtor que define as mensagens padrões</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Sol/Core/Validator.html"><abbr title="Sol\Core\Validator">Validator</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_set">set</a>($name, $value)
+        
+                                            <p>Define o dado que será validado</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMessage">setMessage</a>(string $name, string $value)
+        
+                                            <p>Define uma mensagem customizada</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMessages">getMessages</a>(string $param = false)
+        
+                                            <p>Traz a mensagem de erro</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_required">is_required</a>()
+        
+                                            <p>Verify if the current data is not null</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_min_length">min_length</a>(Int $length, Boolean $inclusive = false)
+        
+                                            <p>Verify if the length of current value is less than the parameter</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_max_length">max_length</a>(Int $length, Boolean $inclusive = false)
+        
+                                            <p>Verify if the length of current value is more than the parameter</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_between_length">between_length</a>(Int $min, Int $max)
+        
+                                            <p>Verify if the length current value is between than the parameters</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_min_value">min_value</a>(Int $value, Boolean $inclusive = false)
+        
+                                            <p>Verify if the current value is less than the parameter</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_max_value">max_value</a>(Int $value, Boolean $inclusive = false)
+        
+                                            <p>Verify if the current value is more than the parameter</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_between_values">between_values</a>(Int $min_value, Int $max_value)
+        
+                                            <p>Verify if the length of current value is more than the parameter</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_email">is_email</a>()
+        
+                                            <p>Verify if the current data is a valid email</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_url">is_url</a>()
+        
+                                            <p>Verify if the current data is a valid URL</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_slug">is_slug</a>()
+        
+                                            <p>Verify if the current data is a slug</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_num">is_num</a>()
+        
+                                            <p>Verify if the current data is a numeric value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_integer">is_integer</a>()
+        
+                                            <p>Verify if the current data is a integer value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_float">is_float</a>()
+        
+                                            <p>Verify if the current data is a float value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_string">is_string</a>()
+        
+                                            <p>Verify if the current data is a string value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_boolean">is_boolean</a>()
+        
+                                            <p>Verify if the current data is a boolean value</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_obj">is_obj</a>()
+        
+                                            <p>Verify if the current data is a object</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_instance_of">is_instance_of</a>(String $class)
+        
+                                            <p>Verify if the current data is a instance of the determinate class</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_arr">is_arr</a>()
+        
+                                            <p>Verify if the current data is a array</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_directory">is_directory</a>()
+        
+                                            <p>Verify if the current parameter it is a directory</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_equals">is_equals</a>(String $value, Boolean $identical = false)
+        
+                                            <p>Verify if the current data is equals than the parameter</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_not_equals">is_not_equals</a>(String $value, Boolean $identical = false)
+        
+                                            <p>Verify if the current data is not equals than the parameter</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_cpf">is_cpf</a>()
+        
+                                            <p>Verify if the current data is a valid CPF</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_cnpj">is_cnpj</a>()
+        
+                                            <p>Verify if the current data is a valid CNPJ</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_contains">contains</a>(Mixed $values, Mixed $separator = false)
+        
+                                            <p>Verify if the current data contains in the parameter</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_not_contains">not_contains</a>(Mixed $values, Mixed $separator = false)
+        
+                                            <p>Verify if the current data not contains in the parameter</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_lowercase">is_lowercase</a>()
+        
+                                            <p>Verify if the current data is loweracase</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_uppercase">is_uppercase</a>()
+        
+                                            <p>Verify if the current data is uppercase</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_multiple">is_multiple</a>(Int $value)
+        
+                                            <p>Verify if the current data is multiple of the parameter</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_positive">is_positive</a>(Boolean $inclusive = false)
+        
+                                            <p>Verify if the current data is a positive number</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_negative">is_negative</a>(Boolean $inclusive = false)
+        
+                                            <p>Verify if the current data is a negative number</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_date">is_date</a>(String $format = null)
+        
+                                            <p>Verify if the current data is a valid Date</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_alpha">is_alpha</a>(String $additional = &#039;&#039;)
+        
+                                            <p>Verify if the current data contains just alpha caracters</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_alpha_num">is_alpha_num</a>(String $additional = &#039;&#039;)
+        
+                                            <p>Verify if the current data contains just alpha-numerics caracters</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_no_whitespaces">no_whitespaces</a>()
+        
+                                            <p>Verify if the current data no contains white spaces</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_phone">is_phone</a>()
+        
+                                            <p>Verify if the current data is a valid Phone Number (8 or 9 digits)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_plate">is_plate</a>()
+        
+                                            <p>Verify if the current data is a valid License Plate (Brazil)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_ip">is_ip</a>()
+        
+                                            <p>Verify if the current data is a valid IP</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_zipCode">is_zipCode</a>()
+        
+                                            <p>Verify if the current data is a valid Zip Code (Brazil)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_validate">validate</a>()
+        
+                                            <p>Validate the data</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    Mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_geterrors">geterrors</a>(String $param = false)
+        
+                                            <p>The messages of invalid data</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         line 29</div>
+        <code>                    void
+    <strong>__construct</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Método construtor que define as mensagens padrões</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_set">
+        <div class="location">at line         line 41</div>
+        <code>                    <a href="../../Sol/Core/Validator.html"><abbr title="Sol\Core\Validator">Validator</abbr></a>
+    <strong>set</strong>($name, $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Define o dado que será validado</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td>string</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td>mixed</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Sol/Core/Validator.html"><abbr title="Sol\Core\Validator">Validator</abbr></a></td>
+            <td>(instância da classe)</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMessage">
+        <div class="location">at line         line 103</div>
+        <code>                    void
+    <strong>setMessage</strong>(string $name, string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Define uma mensagem customizada</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMessages">
+        <div class="location">at line         line 115</div>
+        <code>                    mixed
+    <strong>getMessages</strong>(string $param = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Traz a mensagem de erro</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$param</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_required">
+        <div class="location">at line         line 137</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>is_required</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current data is not null</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_min_length">
+        <div class="location">at line         line 152</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>min_length</strong>(Int $length, Boolean $inclusive = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the length of current value is less than the parameter</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>Int</td>
+                <td>$length</td>
+                <td>The value for compare</td>
+            </tr>
+                    <tr>
+                <td>Boolean</td>
+                <td>$inclusive</td>
+                <td>[optional] Include the lenght in the comparison</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_max_length">
+        <div class="location">at line         line 168</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>max_length</strong>(Int $length, Boolean $inclusive = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the length of current value is more than the parameter</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>Int</td>
+                <td>$length</td>
+                <td>The value for compare</td>
+            </tr>
+                    <tr>
+                <td>Boolean</td>
+                <td>$inclusive</td>
+                <td>[optional] Include the lenght in the comparison</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_between_length">
+        <div class="location">at line         line 184</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>between_length</strong>(Int $min, Int $max)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the length current value is between than the parameters</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>Int</td>
+                <td>$min</td>
+                <td>The minimum value for compare</td>
+            </tr>
+                    <tr>
+                <td>Int</td>
+                <td>$max</td>
+                <td>The maximum value for compare</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_min_value">
+        <div class="location">at line         line 199</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>min_value</strong>(Int $value, Boolean $inclusive = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current value is less than the parameter</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>Int</td>
+                <td>$value</td>
+                <td>The value for compare</td>
+            </tr>
+                    <tr>
+                <td>Boolean</td>
+                <td>$inclusive</td>
+                <td>[optional] Include the value in the comparison</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_max_value">
+        <div class="location">at line         line 215</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>max_value</strong>(Int $value, Boolean $inclusive = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current value is more than the parameter</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>Int</td>
+                <td>$value</td>
+                <td>The value for compare</td>
+            </tr>
+                    <tr>
+                <td>Boolean</td>
+                <td>$inclusive</td>
+                <td>[optional] Include the value in the comparison</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_between_values">
+        <div class="location">at line         line 231</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>between_values</strong>(Int $min_value, Int $max_value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the length of current value is more than the parameter</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>Int</td>
+                <td>$min_value</td>
+                <td>The minimum value for compare</td>
+            </tr>
+                    <tr>
+                <td>Int</td>
+                <td>$max_value</td>
+                <td>The maximum value for compare</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_email">
+        <div class="location">at line         line 244</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>is_email</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current data is a valid email</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_url">
+        <div class="location">at line         line 257</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>is_url</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current data is a valid URL</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_slug">
+        <div class="location">at line         line 270</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>is_slug</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current data is a slug</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_num">
+        <div class="location">at line         line 294</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>is_num</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current data is a numeric value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_integer">
+        <div class="location">at line         line 307</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>is_integer</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current data is a integer value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_float">
+        <div class="location">at line         line 320</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>is_float</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current data is a float value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_string">
+        <div class="location">at line         line 333</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>is_string</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current data is a string value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_boolean">
+        <div class="location">at line         line 346</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>is_boolean</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current data is a boolean value</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_obj">
+        <div class="location">at line         line 359</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>is_obj</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current data is a object</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_instance_of">
+        <div class="location">at line         line 373</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>is_instance_of</strong>(String $class)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current data is a instance of the determinate class</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>String</td>
+                <td>$class</td>
+                <td>The class for compare</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_arr">
+        <div class="location">at line         line 386</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>is_arr</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current data is a array</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_directory">
+        <div class="location">at line         line 399</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>is_directory</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current parameter it is a directory</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_equals">
+        <div class="location">at line         line 415</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>is_equals</strong>(String $value, Boolean $identical = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current data is equals than the parameter</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>String</td>
+                <td>$value</td>
+                <td>The value for compare</td>
+            </tr>
+                    <tr>
+                <td>Boolean</td>
+                <td>$identical</td>
+                <td>[optional] Identical?</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_not_equals">
+        <div class="location">at line         line 431</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>is_not_equals</strong>(String $value, Boolean $identical = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current data is not equals than the parameter</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>String</td>
+                <td>$value</td>
+                <td>The value for compare</td>
+            </tr>
+                    <tr>
+                <td>Boolean</td>
+                <td>$identical</td>
+                <td>[optional] Identical?</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_cpf">
+        <div class="location">at line         line 445</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>is_cpf</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current data is a valid CPF</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_cnpj">
+        <div class="location">at line         line 479</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>is_cnpj</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current data is a valid CNPJ</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_contains">
+        <div class="location">at line         line 512</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>contains</strong>(Mixed $values, Mixed $separator = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current data contains in the parameter</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>Mixed</td>
+                <td>$values</td>
+                <td>One array or String with valids values</td>
+            </tr>
+                    <tr>
+                <td>Mixed</td>
+                <td>$separator</td>
+                <td>[optional] If $values as a String, pass the separator of values (ex: , - | )</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_not_contains">
+        <div class="location">at line         line 536</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>not_contains</strong>(Mixed $values, Mixed $separator = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current data not contains in the parameter</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>Mixed</td>
+                <td>$values</td>
+                <td>One array or String with valids values</td>
+            </tr>
+                    <tr>
+                <td>Mixed</td>
+                <td>$separator</td>
+                <td>[optional] If $values as a String, pass the separator of values (ex: , - | )</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_lowercase">
+        <div class="location">at line         line 558</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>is_lowercase</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current data is loweracase</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_uppercase">
+        <div class="location">at line         line 571</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>is_uppercase</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current data is uppercase</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_multiple">
+        <div class="location">at line         line 585</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>is_multiple</strong>(Int $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current data is multiple of the parameter</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>Int</td>
+                <td>$value</td>
+                <td>The value for comparison</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_positive">
+        <div class="location">at line         line 605</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>is_positive</strong>(Boolean $inclusive = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current data is a positive number</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>Boolean</td>
+                <td>$inclusive</td>
+                <td>[optional] Include 0 in comparison?</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_negative">
+        <div class="location">at line         line 620</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>is_negative</strong>(Boolean $inclusive = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current data is a negative number</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>Boolean</td>
+                <td>$inclusive</td>
+                <td>[optional] Include 0 in comparison?</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_date">
+        <div class="location">at line         line 635</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>is_date</strong>(String $format = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current data is a valid Date</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>String</td>
+                <td>$format</td>
+                <td>[optional] The Date format</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_alpha">
+        <div class="location">at line         line 680</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>is_alpha</strong>(String $additional = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current data contains just alpha caracters</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>String</td>
+                <td>$additional</td>
+                <td>[optional] The extra caracters</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_alpha_num">
+        <div class="location">at line         line 695</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>is_alpha_num</strong>(String $additional = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current data contains just alpha-numerics caracters</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>String</td>
+                <td>$additional</td>
+                <td>[optional] The extra caracters</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_no_whitespaces">
+        <div class="location">at line         line 709</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>no_whitespaces</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current data no contains white spaces</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_phone">
+        <div class="location">at line         line 723</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>is_phone</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current data is a valid Phone Number (8 or 9 digits)</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_plate">
+        <div class="location">at line         line 737</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>is_plate</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current data is a valid License Plate (Brazil)</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_ip">
+        <div class="location">at line         line 751</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>is_ip</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current data is a valid IP</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_zipCode">
+        <div class="location">at line         line 764</div>
+        <code>                    <abbr title="Sol\Core\Data_Validator">Data_Validator</abbr>
+    <strong>is_zipCode</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Verify if the current data is a valid Zip Code (Brazil)</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Sol\Core\Data_Validator">Data_Validator</abbr></td>
+            <td>The self instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validate">
+        <div class="location">at line         line 778</div>
+        <code>                    bool
+    <strong>validate</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Validate the data</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>The validation of data</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_geterrors">
+        <div class="location">at line         line 788</div>
+        <code>                    Mixed
+    <strong>geterrors</strong>(String $param = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>The messages of invalid data</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>String</td>
+                <td>$param</td>
+                <td>[optional] A specific error</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>Mixed</td>
+            <td>One array with messages or a message of specific error</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
