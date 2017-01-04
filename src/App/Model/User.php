@@ -8,7 +8,7 @@
  */
 namespace App\Model;
 
-use Sol\Core\Database\Model;
+use Sol\Core\Model\DomainObjects;
 
 /**
  * Example
@@ -18,7 +18,7 @@ use Sol\Core\Database\Model;
  *
  */
 
-class User extends Model
+class User extends DomainObjects
 {
     private $password;    
 

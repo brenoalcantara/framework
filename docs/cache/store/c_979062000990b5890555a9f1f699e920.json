@@ -14,13 +14,13 @@
     "namespace": "App\\Model",
     "file": "\/var\/www\/html\/sol\/docs\/..\/src\/App\/Model\/User.php",
     "relative_file": null,
-    "hash": "f4acef12b85245b313ef97327d6b440b41a2acc3",
-    "parent": "Sol\\Core\\Database\\Model",
+    "hash": "0e5ed60966f96c3d5a28950ecc80177d08404de2",
+    "parent": "Sol\\Core\\Model\\DomainObjects",
     "modifiers": "Stmt_Class",
     "is_trait": false,
     "is_interface": false,
     "aliases": {
-        "Model": "Sol\\Core\\Database\\Model"
+        "DomainObjects": "Sol\\Core\\Model\\DomainObjects"
     },
     "errors": [],
     "interfaces": [],

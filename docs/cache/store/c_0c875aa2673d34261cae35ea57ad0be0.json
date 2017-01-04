@@ -1,0 +1,31 @@
+{
+    "name": "Sol\\Core\\Model\\DataMappers",
+    "line": 20,
+    "short_desc": "Base\nClasse base para implementa\u00e7\u00e3o das classes de dom\u00ednio",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "version": [
+            [
+                "1.0.0"
+            ]
+        ]
+    },
+    "namespace": "Sol\\Core\\Model",
+    "file": "\/var\/www\/html\/sol\/docs\/..\/src\/Sol\/Core\/Model\/DataMappers.php",
+    "relative_file": null,
+    "hash": "b1f0647a53b347183d6c342010653e60b060079d",
+    "parent": null,
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Connection": "Sol\\Core\\Database\\Connection"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": [],
+    "constants": []
+}
