@@ -9,7 +9,7 @@ function autoload ($class) {
 spl_autoload_register('autoload');
 
 
-$teste = new \App\Model\Example(array(
+$teste = new \App\Model\User(array(
     'name'=>'Teste',
     'password'=>'123456'
     ));

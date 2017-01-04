@@ -1,5 +1,5 @@
 {
-    "name": "App\\Model\\Example",
+    "name": "App\\Model\\User",
     "line": 21,
     "short_desc": "Example\nClasse da entidade exemplo",
     "long_desc": "",
@@ -12,9 +12,9 @@
         ]
     },
     "namespace": "App\\Model",
-    "file": "\/var\/www\/html\/sol\/docs\/..\/src\/App\/Model\/Example.php",
+    "file": "\/var\/www\/html\/sol\/docs\/..\/src\/App\/Model\/User.php",
     "relative_file": null,
-    "hash": "680385abf3417e9476e2fdd92de2ac46f6dcaec9",
+    "hash": "f4acef12b85245b313ef97327d6b440b41a2acc3",
     "parent": "Sol\\Core\\Database\\Model",
     "modifiers": "Stmt_Class",
     "is_trait": false,

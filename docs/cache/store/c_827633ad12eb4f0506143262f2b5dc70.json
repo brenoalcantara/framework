@@ -1,6 +1,6 @@
 {
     "name": "App\\Dao\\User",
-    "line": 17,
+    "line": 19,
     "short_desc": "User\nClasse DAO para persist\u00eancia de dados",
     "long_desc": "",
     "hint": null,
@@ -12,14 +12,16 @@
         ]
     },
     "namespace": "App\\Dao",
-    "file": "\/var\/www\/html\/sol\/docs\/..\/src\/App\/Dao\/User.class.php",
+    "file": "\/var\/www\/html\/sol\/docs\/..\/src\/App\/Dao\/User.php",
     "relative_file": null,
-    "hash": "42806773527be20839084542360b9de2a5039811",
+    "hash": "d57c6e8c2ac69088a022bc5af2d15c3851aeb53f",
     "parent": null,
     "modifiers": "Stmt_Class",
     "is_trait": false,
     "is_interface": false,
-    "aliases": [],
+    "aliases": {
+        "Connection": "Sol\\Core\\Database\\Connection"
+    },
     "errors": [],
     "interfaces": [],
     "traits": [],
@@ -27,7 +29,7 @@
     "methods": {
         "__construct": {
             "name": "__construct",
-            "line": 32,
+            "line": 34,
             "short_desc": "Inicializa a conex\u00e3o com o banco",
             "long_desc": "",
             "hint": [
@@ -45,7 +47,7 @@
             "parameters": {
                 "id": {
                     "name": "id",
-                    "line": 32,
+                    "line": 34,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
@@ -67,7 +69,7 @@
         },
         "insert": {
             "name": "insert",
-            "line": 42,
+            "line": 44,
             "short_desc": "Insere os dados",
             "long_desc": "",
             "hint": [
@@ -85,7 +87,7 @@
             "parameters": {
                 "user": {
                     "name": "user",
-                    "line": 42,
+                    "line": 44,
                     "short_desc": "User $user",
                     "long_desc": null,
                     "hint": [
@@ -103,7 +105,7 @@
         },
         "update": {
             "name": "update",
-            "line": 71,
+            "line": 73,
             "short_desc": "Atualiza os dados",
             "long_desc": "",
             "hint": [
@@ -121,7 +123,7 @@
             "parameters": {
                 "user": {
                     "name": "user",
-                    "line": 71,
+                    "line": 73,
                     "short_desc": "User $user",
                     "long_desc": null,
                     "hint": [
@@ -137,7 +139,7 @@
                 },
                 "id": {
                     "name": "id",
-                    "line": 71,
+                    "line": 73,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
@@ -155,7 +157,7 @@
         },
         "delete": {
             "name": "delete",
-            "line": 97,
+            "line": 99,
             "short_desc": "Deleta um registro",
             "long_desc": "",
             "hint": [
@@ -173,7 +175,7 @@
             "parameters": {
                 "id": {
                     "name": "id",
-                    "line": 97,
+                    "line": 99,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
@@ -191,7 +193,7 @@
         },
         "__destruct": {
             "name": "__destruct",
-            "line": 112,
+            "line": 114,
             "short_desc": "",
             "long_desc": "",
             "hint": null,

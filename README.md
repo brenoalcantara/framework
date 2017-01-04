@@ -2,4 +2,4 @@
 
 Bibliotecas PHP
 
-Exemplo de uso do phpDocumentor: php phpDocumentor.phar -d . -t docs/
+Gerando documentação com o Sami: php docs/sami.phar update docs/config.php  

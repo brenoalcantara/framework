@@ -18,7 +18,7 @@ use Sol\Core\Database\Model;
  *
  */
 
-class Example extends Model
+class User extends Model
 {
     private $password;    
 

@@ -8,6 +8,8 @@
  */
 namespace App\Dao;
 
+use Sol\Core\Database\Connection;
+
 /**
  * User
  * Classe DAO para persistência de dados
