@@ -1,0 +1,84 @@
+{
+    "name": "App\\Model\\Example",
+    "line": 21,
+    "short_desc": "Example\nClasse da entidade exemplo",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "version": [
+            [
+                "1.0.0"
+            ]
+        ]
+    },
+    "namespace": "App\\Model",
+    "file": "\/var\/www\/html\/sol\/docs\/..\/src\/App\/Model\/Example.php",
+    "relative_file": null,
+    "hash": "680385abf3417e9476e2fdd92de2ac46f6dcaec9",
+    "parent": "Sol\\Core\\Database\\Model",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Model": "Sol\\Core\\Database\\Model"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 25,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "attributes": {
+                    "name": "attributes",
+                    "line": 25,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "array()",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "password": {
+            "name": "password",
+            "line": 29,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "value": {
+                    "name": "value",
+                    "line": 29,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

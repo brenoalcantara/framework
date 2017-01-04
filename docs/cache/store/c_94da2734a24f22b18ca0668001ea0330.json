@@ -1,0 +1,86 @@
+{
+    "name": "Sol\\Core\\Database\\Connection",
+    "line": 21,
+    "short_desc": "Connection\nClasse final padrao Singleton para conexao com o Mysql",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "version": [
+            [
+                "1.1.0"
+            ]
+        ],
+        "todo": [
+            [
+                "Add",
+                "suporte",
+                "para",
+                "outros",
+                "bancos:",
+                "PostgreSql,",
+                "Sqlite..."
+            ]
+        ]
+    },
+    "namespace": "Sol\\Core\\Database",
+    "file": "\/var\/www\/html\/sol\/docs\/..\/src\/Sol\/Core\/Database\/Connection.class.php",
+    "relative_file": null,
+    "hash": "fa9ff632f71578d030cf585aac4d206090a8d095",
+    "parent": null,
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "PDO": "PDO",
+        "PDOException": "PDOException"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "getConnection": {
+            "name": "getConnection",
+            "line": 63,
+            "short_desc": "Retorna a conex\u00e3o",
+            "long_desc": "",
+            "hint": [
+                [
+                    "resource",
+                    false
+                ],
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": {
+        "DSN": {
+            "name": "DSN",
+            "line": 26,
+            "short_desc": "Constantes para a defini\u00e7\u00e3o da string de conex\u00e3o via PDO.",
+            "long_desc": ""
+        },
+        "USER": {
+            "name": "USER",
+            "line": 27,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "PASS": {
+            "name": "PASS",
+            "line": 28,
+            "short_desc": "",
+            "long_desc": ""
+        }
+    }
+}
