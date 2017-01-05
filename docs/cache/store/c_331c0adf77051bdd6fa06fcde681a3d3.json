@@ -1,5 +1,5 @@
 {
-    "name": "Sol\\Core\\Util",
+    "name": "Sol\\Core\\Helper\\Util",
     "line": 17,
     "short_desc": "Util\nClasse com fun\u00e7\u00f5es utilit\u00e1rias",
     "long_desc": "",
@@ -11,10 +11,10 @@
             ]
         ]
     },
-    "namespace": "Sol\\Core",
-    "file": "\/var\/www\/html\/sol\/docs\/..\/src\/Sol\/Core\/Util.class.php",
+    "namespace": "Sol\\Core\\Helper",
+    "file": "\/var\/www\/html\/sol\/docs\/..\/src\/Sol\/Core\/Helper\/Util.class.php",
     "relative_file": null,
-    "hash": "55ae3b76caa0e623273b15ade1d6543d4c7058e7",
+    "hash": "cf69ac3a5f84b5903d3f569b53f18770ace88a04",
     "parent": null,
     "modifiers": "Stmt_Class",
     "is_trait": false,

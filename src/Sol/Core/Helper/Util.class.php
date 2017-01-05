@@ -6,7 +6,7 @@
  * @license http://opensource.org/licenses/MIT The MIT License (MIT)
  * @package Sol\Core
  */
-namespace Sol\Core;
+namespace Sol\Core\Helper;
 
 /**
  * Util

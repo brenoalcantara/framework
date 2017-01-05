@@ -1,0 +1,841 @@
+{
+    "name": "Sol\\Core\\Helper\\Validation",
+    "line": 18,
+    "short_desc": "Base\nClasse para valida\u00e7\u00e3o de dados",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "version": [
+            [
+                "1.0.0"
+            ]
+        ]
+    },
+    "namespace": "Sol\\Core\\Helper",
+    "file": "\/var\/www\/html\/sol\/docs\/..\/src\/Sol\/Core\/Helper\/Validation.php",
+    "relative_file": null,
+    "hash": "d38f277dbad60f708f034e20e5b2fa37399bc395",
+    "parent": null,
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": [],
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 30,
+            "short_desc": "M\u00e9todo construtor (inicializa definindo as mensagens padr\u00f5es).",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "access": [
+                    [
+                        "public"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "set": {
+            "name": "set",
+            "line": 42,
+            "short_desc": "Define o valor que ser\u00e1 validado",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Sol\\Core\\Helper\\Validator",
+                    false
+                ]
+            ],
+            "hint_desc": "(objeto)",
+            "tags": {
+                "access": [
+                    [
+                        "public"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "name": {
+                    "name": "name",
+                    "line": 42,
+                    "short_desc": "string",
+                    "long_desc": null,
+                    "hint": [],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "value": {
+                    "name": "value",
+                    "line": 42,
+                    "short_desc": "mixed",
+                    "long_desc": null,
+                    "hint": [],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "setMessage": {
+            "name": "setMessage",
+            "line": 83,
+            "short_desc": "Define uma mensagem customizada.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "name": {
+                    "name": "name",
+                    "line": 83,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "value": {
+                    "name": "value",
+                    "line": 83,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getMessage": {
+            "name": "getMessage",
+            "line": 95,
+            "short_desc": "Traz a mensagem que foi customizada.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "param": {
+                    "name": "param",
+                    "line": 95,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "false",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "isRequired": {
+            "name": "isRequired",
+            "line": 117,
+            "short_desc": "Verifica se o valor n\u00e3o \u00e9 nulo",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Sol\\Core\\Helper\\Validation",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "access": [
+                    [
+                        "public"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "isMinLength": {
+            "name": "isMinLength",
+            "line": 132,
+            "short_desc": "Verifica se o valor \u00e9 menor que o par\u00e2metro recebido",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Sol\\Core\\Helper\\Validation",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "access": [
+                    [
+                        "public"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "length": {
+                    "name": "length",
+                    "line": 132,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "inclusive": {
+                    "name": "inclusive",
+                    "line": 132,
+                    "short_desc": "[opcional]",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "boolean",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "false",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "isMaxLength": {
+            "name": "isMaxLength",
+            "line": 148,
+            "short_desc": "Verifica se o valor \u00e9 maior que o par\u00e2metro recebido",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Sol\\Core\\Helper\\Validation",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "access": [
+                    [
+                        "public"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "length": {
+                    "name": "length",
+                    "line": 148,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "inclusive": {
+                    "name": "inclusive",
+                    "line": 148,
+                    "short_desc": "[opcional]",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "boolean",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "false",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "isMinValue": {
+            "name": "isMinValue",
+            "line": 164,
+            "short_desc": "Verifica se o valor \u00e9 menor que o par\u00e2metro recebido",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Sol\\Core\\Helper\\Validation",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "access": [
+                    [
+                        "public"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "value": {
+                    "name": "value",
+                    "line": 164,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "inclusive": {
+                    "name": "inclusive",
+                    "line": 164,
+                    "short_desc": "[opcional]",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "boolean",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "false",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "isMaxValue": {
+            "name": "isMaxValue",
+            "line": 180,
+            "short_desc": "Verifica se o valor \u00e9 maior que o par\u00e2metro recebido",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Sol\\Core\\Helper\\Validation",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "access": [
+                    [
+                        "public"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "value": {
+                    "name": "value",
+                    "line": 180,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "inclusive": {
+                    "name": "inclusive",
+                    "line": 180,
+                    "short_desc": "[opcional]",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "boolean",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "false",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "isEmail": {
+            "name": "isEmail",
+            "line": 194,
+            "short_desc": "Verifica se o valor \u00e9 um email v\u00e1lido",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Sol\\Core\\Helper\\Validation",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "access": [
+                    [
+                        "public"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "isUrl": {
+            "name": "isUrl",
+            "line": 207,
+            "short_desc": "Verifica se o valor \u00e9 uma url v\u00e1lida",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Sol\\Core\\Helper\\Validation",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "access": [
+                    [
+                        "public"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "isCpf": {
+            "name": "isCpf",
+            "line": 220,
+            "short_desc": "Verifica se o valor \u00e9 um CPF v\u00e1lido",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Sol\\Core\\Helper\\Validation",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "access": [
+                    [
+                        "public"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "isCnpj": {
+            "name": "isCnpj",
+            "line": 262,
+            "short_desc": "Verifica se o valor \u00e9 um CNPJ v\u00e1lido",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Sol\\Core\\Helper\\Validation",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "access": [
+                    [
+                        "public"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "isPositive": {
+            "name": "isPositive",
+            "line": 300,
+            "short_desc": "Verifica se o valor \u00e9 um n\u00famero positivo",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Sol\\Core\\Helper\\Validation",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "access": [
+                    [
+                        "public"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "inclusive": {
+                    "name": "inclusive",
+                    "line": 300,
+                    "short_desc": "[opcional]",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "boolean",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "false",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "isDate": {
+            "name": "isDate",
+            "line": 315,
+            "short_desc": "Verifica se o valor \u00e9 uma data v\u00e1lida",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Sol\\Core\\Helper\\Validation",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "access": [
+                    [
+                        "public"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "format": {
+                    "name": "format",
+                    "line": 315,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "isAlpha": {
+            "name": "isAlpha",
+            "line": 360,
+            "short_desc": "Verifica se o valor cont\u00eam apenas caracteres sem n\u00fameros",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Sol\\Core\\Helper\\Validation",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "access": [
+                    [
+                        "public"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "extras": {
+                    "name": "extras",
+                    "line": 360,
+                    "short_desc": "[optional] caracteres extras",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "''",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "isAlphaNum": {
+            "name": "isAlphaNum",
+            "line": 375,
+            "short_desc": "Verifica se o valor cont\u00eam apenas caracteres alfanum\u00e9ricos",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Sol\\Core\\Helper\\Validation",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "access": [
+                    [
+                        "public"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "extras": {
+                    "name": "extras",
+                    "line": 375,
+                    "short_desc": "[optional] caracteres extras",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "''",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "noWhitespaces": {
+            "name": "noWhitespaces",
+            "line": 389,
+            "short_desc": "Verifica se o valor n\u00e3o cont\u00eam espa\u00e7os",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Sol\\Core\\Helper\\Validation",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "access": [
+                    [
+                        "public"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "isPhoneNumber": {
+            "name": "isPhoneNumber",
+            "line": 403,
+            "short_desc": "Verifica se o valor \u00e9 um n\u00famero de telefone v\u00e1lido (8 or 9 d\u00edgitos)",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Sol\\Core\\Helper\\Validation",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "access": [
+                    [
+                        "public"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "isIp": {
+            "name": "isIp",
+            "line": 417,
+            "short_desc": "Verifica se o valor \u00e9 um IP v\u00e1lido",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Sol\\Core\\Helper\\Validation",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "access": [
+                    [
+                        "public"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "isZipCode": {
+            "name": "isZipCode",
+            "line": 430,
+            "short_desc": "Verifica se o valor \u00e9 um CEP v\u00e1lido",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Sol\\Core\\Helper\\Validation",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "access": [
+                    [
+                        "public"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "validate": {
+            "name": "validate",
+            "line": 444,
+            "short_desc": "Retorna se o valor foi validado",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "access": [
+                    [
+                        "public"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}
