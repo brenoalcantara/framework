@@ -12,7 +12,7 @@ namespace Sol\Core;
  * Router
  * Classe para roteamento de URLs
  *
- * @version 1.0.0
+ * @version 1.1.0
  */
 class Router
 {
@@ -42,32 +42,34 @@ class Router
 	 *
 	 * @return void
 	 */
-	public function __construct(){
-		$this->url = (isset($_GET['param'])) ? explode('/', $_GET['param']) : array('');
+	public function __construct()
+        {
+            $param = filter_input(INPUT_GET,'param',FILTER_SANITIZE_STRING);
+	    $this->url = (!empty($param)) ? explode('/', $param) : array('');
 	}
 
 	/**
 	 * Retorna um parâmetro específico
 	 *
 	 * @param string $param
-	 * @return mixed
+	 * @return string|bool
 	 */
 	public function getParam($param){
-		if (array_key_exists($param, $this->url)) {
-			return $this->url[$param];
-		} else {
-			return false;
-		}
+            if (array_key_exists($param, $this->url)) {
+                return $this->url[$param];
+            } else {
+                return false;
+            }
 	}
 
 	/**
-	 * Retorna o controller
+	 * Retorna o controller da url
 	 *
 	 * @return string
 	 */
 	public function getController(){
-		$this->controller = ($this->url[0] == null) ? 'index' : $this->url[0];
-		return (is_string($this->controller)) ? $this->controller : 'index';
+            $this->controller = ($this->url[0] == null) ? '' : $this->url[0];
+            return $this->controller;
 	}
 
 	/**
@@ -76,7 +78,7 @@ class Router
 	 * @return string
 	 */
 	public function getAction(){
-		$this->action = (isset($this->url[1]) && strlen($this->url[1]) != 0 && is_string($this->url[1])) ? $this->url[1] : 'init';
-		return $this->action;
+            $this->action = (isset($this->url[1]) && strlen($this->url[1]) > 0 && is_string($this->url[1])) ? $this->url[1] : '';
+            return $this->action;
 	}
 }

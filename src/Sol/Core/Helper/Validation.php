@@ -4,12 +4,12 @@
  * @copyright 2017 Breno Alcantara
  * @license MIT
  * @license http://opensource.org/licenses/MIT The MIT License (MIT)
- * @package Sol\Core\Model
+ * @package Sol\Core\Helper
  */
 namespace Sol\Core\Helper;
 
 /**
- * Base
+ * Validation
  * Classe para validação de dados
  * 
  * @version 1.0.0
