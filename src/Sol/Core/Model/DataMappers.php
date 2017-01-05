@@ -45,23 +45,65 @@ class DataMappers
      * Inicializa a conexão com o banco
      *
      * @param int|null $id
+     * @param string|null $table
      * @return void
      */
-    public function __construct($id = null, $table = null) {
+    public function __construct($id = null, $table = null) 
+    {
         $this->id = $id;
         $this->table = $table;
         $this->conn = Connection::getConnection();
         
         if (!is_null($this->id)) {
-            $this->load();
+            $this->findById();
         }
     }
     
-    public function load() {
+    /**
+     * Busca o registro pelo id
+     * 
+     * @return resource
+     */
+    public function findById() 
+    {
         $sql = "SELECT * FROM {$this->table} WHERE id = {$this->id} ";
         $query = $this->conn->query($sql);
         
         $result = $query->fetch(\PDO::FETCH_OBJ);
+        
+        return $result;
+    }
+    
+    /**
+     * Método sql genérico
+     *  
+     * @param string $columns
+     * @param string $where
+     * @param string $orderBy
+     * @param string $groupBy
+     *
+     * @return string $sql
+     * 
+     */
+    public function query($columns = '*', $where = '', $orderBy = '', $groupBy = '') 
+    {
+        $sql = " SELECT {$columns} FROM {$this->tableName} ";
+        
+        if ($where != '') {
+            $sql .= " WHERE {$where}";
+        }
+
+        if ($orderBy != '') {
+            $sql .= " ORDER BY {$orderBy}";
+        }
+
+        if ($groupBy != '') {
+            $sql .= " GROUP BY {$groupBy}";
+        }
+
+        $query = $this->conn->query($sql);
+        
+        $result = $query->fetchAll(\PDO::FETCH_OBJ);
         
         return $result;
     }
