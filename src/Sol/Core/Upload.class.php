@@ -100,32 +100,32 @@ class Upload
 	 * @return void
 	 */
 	public function __construct($file) {
-		$this->file = $file;
-		foreach ($this->file as $value) {
-			$this->name = $value['name'];
-			$this->type = $value['type'];
-			$this->tmpName = $value['tmp_name'];
-			$this->size = $value['size'];
+            $this->file = $file;
+            foreach ($this->file as $value) {
+                $this->name    = $value['name'];
+                $this->type    = $value['type'];
+                $this->tmpName = $value['tmp_name'];
+                $this->size    = $value['size'];
 
 
-			$imageSize = getimagesize($this->tmpName);
+                $imageSize = getimagesize($this->tmpName);
 
-			if ($imageSize != false) {
-				$this->width = $imageSize[0];
-				$this->height = $imageSize[1];
-			}
-		}
+                if ($imageSize != false) {
+                    $this->width  = $imageSize[0];
+                    $this->height = $imageSize[1];
+                }
+            }
 	}
 
 	/**
-	 * Seta o destino do arquivo
+	 * Define o destino do arquivo
 	 *
 	 * @param string $path
 	 * @return void
 	 */
 	public function setPath($path) {
             /**
-             * Se o destino não for um diretorio, cria e seta permissao de escrita
+             * Se o destino não for um diretorio, cria e define permissao de escrita
              */
             if (!is_dir($path)) {
                 mkdir($path, 0777, true);
@@ -135,9 +135,9 @@ class Upload
 	}
 
 	/**
-	 * Seta as extensoes permitidas
+	 * Define as extensoes permitidas
 	 *
-	 * @param array $extesions
+	 * @param array $extensions
 	 * @return void
 	 */
 	public function setAllowedExtensions($extensions) {
@@ -149,7 +149,7 @@ class Upload
 	}
 
 	/**
-	 * Seta o tamanho maximo permitido
+	 * Define o tamanho máximo permitido
 	 *
 	 * @param int $size
 	 * @return void
@@ -159,7 +159,7 @@ class Upload
 	}
 
 	/**
-	 * Seta a mensagem de sucesso ou erro
+	 * Define a mensagem de sucesso ou erro
 	 *
 	 * @param string $message
 	 * @return void
